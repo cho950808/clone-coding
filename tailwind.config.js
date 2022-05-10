@@ -34,7 +34,14 @@ module.exports = {
       "2xl": "1800px",
       // => @media (min-width: 1536px) { ... }
     },
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+        7: "repeat(7, minmax(0, 1fr))",
+        8: "repeat(8, minmax(0, 1fr))",
+
+        layout: "200px minmax(900px, 1fr) 100px",
+      },
+    },
   },
   plugins: [],
 };
