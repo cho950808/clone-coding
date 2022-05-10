@@ -1,7 +1,7 @@
 export default function PaintBox() {
   return (
-    <div className="flex items-center bg-black">
-      <div className="flex">
+    <div className="flex relative items-center justify-center">
+      <div className="flex absolute h-full relative">
         <div className="bg-white z-20 fixed top-0 left-0 right-0 w-full">
           <nav className="bg-white">
             <div className="m-auto px-40 py-10">
@@ -68,19 +68,44 @@ export default function PaintBox() {
             </div>
           </nav>
         </div>
+
+        <main className="2xl:mt-[140px] mt-[140px] w-full flex flex-col w-full h-full relative px-20 bg-black">
+          <section className="mt-8 relative">
+            <div className="flex grid grid-cols-2 h-full xs:px-60 xs:py-10">
+              <div className="bg-red-400">
+                <img
+                  src="//cdn.shopify.com/s/files/1/0086/4865/4895/files/Like_French_-_Blog_Photo-3_960x960_crop_center.jpg?v=1635790977"
+                  className="h-full w-full bg-cover"
+                ></img>
+              </div>
+              <div className="flex items-center text-center bg-[#fbf7f6] w-full text-black text-[34px]">
+                <p>
+                  <em>Like French,</em>
+                  our deep burgundy polish that's as timeless as red lipstick.
+                  Statement-making as a solid color or with art, make it your
+                  signature red.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section className="mt-8 relative">
+            <div className="flex grid grid-cols-2 h-full xs:px-60 xs:py-10">
+              <div className="">
+                <img
+                  src="//cdn.shopify.com/s/files/1/0086/4865/4895/files/PAINTBOX-UES_0027_copy_960x960_crop_center.jpg?v=1628778916"
+                  className="h-full w-full bg-cover"
+                />
+              </div>
+              <div className="flex flex-col w-full h-full items-center text-center bg-[#fbf7f6] text-black text-[34px]">
+                <div className="h-full w-full items-center justify-center">
+                  <p>OUR STUDIO</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
       </div>
-      <main className="mx-auto mt-[200px]">
-        <section className="">
-          <div className="text-[20px] text-black">
-            <img src="//cdn.shopify.com/s/files/1/0086/4865/4895/files/custom_resized_84b24d6e-ed8a-45f1-8c57-ff456232f6c2_1280x743_crop_center.jpg?v=1651509181" />
-            <p className="absolute">
-              MOTHER'S DAY SALE Treat mom to some well-deserved self-care! Take
-              20% off The Paint Box & Power Couples using code MOTHERSDAY22 at
-              checkout.
-            </p>
-          </div>
-        </section>
-      </main>
     </div>
   );
 }
