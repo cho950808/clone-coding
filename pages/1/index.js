@@ -1,8 +1,8 @@
 export default function Horrorscenes() {
   return (
-    <div class="flex">
+    <sdiv className="flex">
       <aside>
-        <div class="flex flex-col w-[500px] h-screen overflow-y-auto border-r bg-white p-20 grid grid-rows-2">
+        <div class="flex flex-col w-[550px] h-screen overflow-y-auto border-r bg-white p-20 grid grid-rows-2 top-0 left-0 right-0 fixed">
           <div className="flex items-start mt-20">
             <h1 className="text-primary text-[72px] uppercase leading-[60px]">
               best horror scenes
@@ -46,19 +46,20 @@ export default function Horrorscenes() {
           </div>
         </div>
       </aside>
-      <div className="w-full h-full">
-        <nav className="z-10 top-0 left-0 right-0 w-full">
-          <div className="flex bg-black items-center justify-center p-40 border-4 border-dotted"></div>
-        </nav>
-      </div>
 
-      <section className="w-full h-full">
-        <article>
-          <div className="flex bg-black items-center justify-center p-40 border-4 border-dotted">
-            asdasdas
-          </div>
-        </article>
-      </section>
-    </div>
+      <div className="flex-1 flex-col overflow-hidden">
+        <div className="flex bg-red-200 items-center justify-center p-40 border-4 text-[200px]">
+          head
+        </div>
+
+        <main className="flex-1 overflow-x-hidden overflow-y-auto">
+          <div className="flex bg-black items-center justify-center p-40 border-4"></div>
+          <div className="flex bg-black items-center justify-center p-40 border-4"></div>
+          <div className="flex bg-black items-center justify-center p-40 border-4"></div>
+          <div className="flex bg-black items-center justify-center p-40 border-4"></div>
+          <div className="flex bg-black items-center justify-center p-40 border-4"></div>
+        </main>
+      </div>
+    </sdiv>
   );
 }
